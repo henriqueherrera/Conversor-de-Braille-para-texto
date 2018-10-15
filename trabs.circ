@@ -48,11 +48,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
     <sep/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
       <a name="tristate" val="false"/>
     </tool>
     <tool lib="0" name="Pin">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </tool>
@@ -196,7 +195,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(300,120)" to="(320,120)"/>
     <wire from="(250,400)" to="(250,440)"/>
     <wire from="(280,390)" to="(280,430)"/>
-    <wire from="(840,450)" to="(870,450)"/>
     <wire from="(810,320)" to="(810,380)"/>
     <wire from="(260,290)" to="(270,290)"/>
     <wire from="(200,110)" to="(210,110)"/>
@@ -205,25 +203,115 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(90,280)" to="(100,280)"/>
     <wire from="(360,110)" to="(360,170)"/>
     <wire from="(210,110)" to="(210,230)"/>
+    <wire from="(860,450)" to="(870,450)"/>
     <wire from="(650,320)" to="(660,320)"/>
-    <comp lib="0" loc="(610,100)" name="Pin">
+    <comp lib="2" loc="(200,110)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(163,417)" name="Text">
+      <a name="text" val="1-acrescenta"/>
+    </comp>
+    <comp lib="3" loc="(1030,160)" name="Adder"/>
+    <comp lib="1" loc="(240,390)" name="Controlled Inverter">
+      <a name="facing" val="west"/>
+      <a name="size" val="20"/>
+      <a name="control" val="left"/>
+    </comp>
+    <comp lib="5" loc="(120,250)" name="DotMatrix">
+      <a name="matrixcols" val="2"/>
+      <a name="matrixrows" val="3"/>
+      <a name="dotshape" val="circle"/>
+    </comp>
+    <comp lib="6" loc="(1050,57)" name="Text">
+      <a name="text" val="deixar sempre no 1"/>
+    </comp>
+    <comp lib="0" loc="(200,360)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(258,352)" name="Text">
-      <a name="text" val="contador"/>
+    <comp lib="0" loc="(200,340)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(330,310)" name="Buffer"/>
-    <comp lib="3" loc="(560,170)" name="Adder"/>
+    <comp lib="6" loc="(345,465)" name="Text">
+      <a name="text" val="volta para 0 quando tiver no modo leitura"/>
+    </comp>
+    <comp lib="6" loc="(108,144)" name="Text">
+      <a name="text" val="1000"/>
+    </comp>
+    <comp lib="6" loc="(122,545)" name="Text">
+      <a name="text" val="sempre parar o clock no 0"/>
+    </comp>
+    <comp lib="0" loc="(1010,140)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(400,200)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(860,190)" name="Pin">
+    <comp lib="6" loc="(707,615)" name="Text">
+      <a name="text" val="3ºcoloque o caractere desejado no input"/>
+    </comp>
+    <comp lib="0" loc="(610,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(490,430)" name="Button">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(400,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(710,190)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(170,317)" name="Text">
+      <a name="text" val="1-gravação 0-leitura"/>
+    </comp>
+    <comp lib="0" loc="(770,120)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="2" loc="(350,110)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(577,144)" name="Text">
+      <a name="text" val="1001"/>
+    </comp>
+    <comp lib="5" loc="(850,390)" name="TTY"/>
+    <comp lib="0" loc="(1010,180)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(265,149)" name="Text">
+      <a name="text" val="10001"/>
+    </comp>
+    <comp lib="6" loc="(895,144)" name="Text">
+      <a name="text" val="1101"/>
+    </comp>
+    <comp lib="6" loc="(963,600)" name="Text">
+      <a name="text" val="2ºvolte o contador para 0"/>
+    </comp>
+    <comp lib="0" loc="(770,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(64,361)" name="Text">
+      <a name="text" val="1-clock p/"/>
+    </comp>
+    <comp lib="6" loc="(709,559)" name="Text">
+      <a name="text" val="para inserir coloque a entrada no input"/>
+    </comp>
+    <comp lib="0" loc="(50,40)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
     </comp>
     <comp lib="4" loc="(800,320)" name="ROM">
       <a name="dataWidth" val="7"/>
@@ -237,239 +325,142 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 76 0 71
 </a>
     </comp>
-    <comp lib="6" loc="(64,361)" name="Text">
-      <a name="text" val="1-clock p/"/>
-    </comp>
-    <comp lib="6" loc="(412,556)" name="Text">
-      <a name="text" val="3ºcoloque o caractere desejado no input"/>
-    </comp>
-    <comp lib="6" loc="(122,545)" name="Text">
-      <a name="text" val="sempre parar o clock no 0"/>
-    </comp>
-    <comp lib="6" loc="(323,468)" name="Text">
-      <a name="text" val="1- volta p/0 quando tiver no modo leitura"/>
-    </comp>
-    <comp lib="0" loc="(450,100)" name="Pin">
-      <a name="width" val="8"/>
+    <comp lib="0" loc="(90,260)" name="Pin">
+      <a name="width" val="3"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(746,523)" name="Text">
-      <a name="text" val="1ºcoloque no modo leitura"/>
+    <comp lib="6" loc="(832,435)" name="Text">
+      <a name="text" val="1=Lê o caractere 0= não lê"/>
     </comp>
+    <comp lib="6" loc="(622,634)" name="Text">
+      <a name="text" val="4º de um clock"/>
+    </comp>
+    <comp lib="5" loc="(240,440)" name="Button"/>
+    <comp lib="5" loc="(70,330)" name="Button"/>
+    <comp lib="6" loc="(258,352)" name="Text">
+      <a name="text" val="contador"/>
+    </comp>
+    <comp lib="0" loc="(100,510)" name="Clock"/>
     <comp lib="1" loc="(340,430)" name="NOT Gate"/>
-    <comp lib="0" loc="(610,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1010,140)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(140,330)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(737,545)" name="Text">
-      <a name="text" val="2ºvolte o contador para 0"/>
-    </comp>
-    <comp lib="6" loc="(163,417)" name="Text">
-      <a name="text" val="1-acrescenta"/>
-    </comp>
-    <comp lib="6" loc="(759,499)" name="Text">
-      <a name="text" val="para ler o texto"/>
-    </comp>
     <comp lib="6" loc="(506,458)" name="Text">
       <a name="text" val="1º limpa"/>
+    </comp>
+    <comp lib="2" loc="(980,110)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
     </comp>
     <comp lib="6" loc="(75,241)" name="Text">
       <a name="text" val="input"/>
     </comp>
-    <comp lib="6" loc="(745,143)" name="Text">
-      <a name="text" val="110"/>
+    <comp lib="0" loc="(160,390)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
+    <comp lib="3" loc="(560,170)" name="Adder"/>
     <comp lib="3" loc="(420,180)" name="Adder"/>
-    <comp lib="6" loc="(488,522)" name="Text">
-      <a name="text" val="1º coloca no modo gravação"/>
-    </comp>
-    <comp lib="3" loc="(880,170)" name="Adder"/>
-    <comp lib="0" loc="(400,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(860,150)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(150,100)" name="Pin">
+    <comp lib="0" loc="(300,100)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="5" loc="(120,250)" name="DotMatrix">
-      <a name="matrixcols" val="2"/>
-      <a name="matrixrows" val="3"/>
-      <a name="dotshape" val="circle"/>
+    <comp lib="4" loc="(470,360)" name="RAM">
+      <a name="bus" val="asynch"/>
     </comp>
-    <comp lib="6" loc="(1051,57)" name="Text">
-      <a name="text" val="deixar no 1 sempre"/>
+    <comp lib="4" loc="(230,360)" name="Counter"/>
+    <comp lib="6" loc="(745,143)" name="Text">
+      <a name="text" val="110"/>
+    </comp>
+    <comp lib="2" loc="(820,110)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(610,120)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(290,290)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(150,120)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(670,577)" name="Text">
+      <a name="text" val="1º coloca no modo gravação"/>
+    </comp>
+    <comp lib="6" loc="(65,380)" name="Text">
+      <a name="text" val="inserir"/>
+    </comp>
+    <comp lib="0" loc="(60,80)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="1" loc="(330,310)" name="Buffer"/>
+    <comp lib="1" loc="(780,390)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="6" loc="(932,561)" name="Text">
+      <a name="text" val="para ler o texto"/>
     </comp>
     <comp lib="0" loc="(930,100)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="2" loc="(200,110)" name="Multiplexer">
+    <comp lib="5" loc="(860,450)" name="Button"/>
+    <comp lib="0" loc="(540,190)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(500,110)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="6" loc="(131,215)" name="Text">
       <a name="text" val="insert text"/>
     </comp>
-    <comp lib="6" loc="(144,315)" name="Text">
-      <a name="text" val="1-grava 0-lê"/>
-    </comp>
-    <comp lib="0" loc="(770,120)" name="Pin">
+    <comp lib="6" loc="(568,484)" name="Text"/>
+    <comp lib="0" loc="(930,120)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="2" loc="(500,110)" name="Multiplexer">
+    <comp lib="0" loc="(860,190)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(740,420)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="3" loc="(730,170)" name="Adder"/>
+    <comp lib="2" loc="(660,110)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(160,390)" name="Pin">
+    <comp lib="0" loc="(540,150)" name="Pin">
+      <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(450,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(738,564)" name="Text">
-      <a name="text" val="3ºcrtl k para iniciar o clock"/>
-    </comp>
-    <comp lib="2" loc="(820,110)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(50,40)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
+    <comp lib="6" loc="(965,583)" name="Text">
+      <a name="text" val="1ºcoloque no modo leitura"/>
     </comp>
     <comp lib="1" loc="(170,500)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="3" loc="(1030,160)" name="Adder"/>
-    <comp lib="1" loc="(290,290)" name="Controlled Buffer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(90,260)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(540,190)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(240,440)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(472,539)" name="Text">
-      <a name="text" val="2º deixa o contador no 0"/>
-    </comp>
-    <comp lib="4" loc="(230,360)" name="Counter"/>
-    <comp lib="0" loc="(300,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(524,504)" name="Text">
-      <a name="text" val="para inserir coloque a entrada no input"/>
-    </comp>
-    <comp lib="6" loc="(568,484)" name="Text"/>
-    <comp lib="0" loc="(70,330)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(740,420)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(490,430)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(930,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="3" loc="(730,170)" name="Adder"/>
-    <comp lib="0" loc="(150,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(343,575)" name="Text">
-      <a name="text" val="4º de um clock"/>
-    </comp>
-    <comp lib="6" loc="(108,144)" name="Text">
-      <a name="text" val="1000"/>
-    </comp>
-    <comp lib="4" loc="(470,360)" name="RAM">
-      <a name="bus" val="asynch"/>
-    </comp>
-    <comp lib="2" loc="(660,110)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(100,510)" name="Clock"/>
-    <comp lib="0" loc="(540,150)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(710,190)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="5" loc="(850,390)" name="TTY"/>
-    <comp lib="6" loc="(895,144)" name="Text">
-      <a name="text" val="1101"/>
-    </comp>
-    <comp lib="6" loc="(65,380)" name="Text">
-      <a name="text" val="inserir"/>
-    </comp>
-    <comp lib="2" loc="(350,110)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(60,80)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
     <comp lib="0" loc="(90,280)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(746,451)" name="Text">
-      <a name="text" val="1=Lê o caractere 0= não lê"/>
+    <comp lib="6" loc="(851,474)" name="Text">
+      <a name="text" val="Limpa a Saída de texto"/>
     </comp>
-    <comp lib="0" loc="(1030,80)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(265,149)" name="Text">
-      <a name="text" val="10001"/>
-    </comp>
-    <comp lib="0" loc="(300,100)" name="Pin">
+    <comp lib="0" loc="(300,120)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(577,144)" name="Text">
-      <a name="text" val="1001"/>
+    <comp lib="6" loc="(656,597)" name="Text">
+      <a name="text" val="2º deixa o contador no 0"/>
     </comp>
-    <comp lib="0" loc="(840,450)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(240,390)" name="Controlled Inverter">
-      <a name="facing" val="west"/>
-      <a name="size" val="20"/>
-      <a name="control" val="left"/>
-    </comp>
-    <comp lib="0" loc="(770,100)" name="Pin">
+    <comp lib="0" loc="(150,100)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
@@ -477,30 +468,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="2" loc="(980,110)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="6" loc="(436,150)" name="Text">
       <a name="text" val="111011"/>
     </comp>
-    <comp lib="6" loc="(851,474)" name="Text">
-      <a name="text" val="Limpa a Saída de texto"/>
+    <comp lib="6" loc="(964,619)" name="Text">
+      <a name="text" val="3ºcrtl k para iniciar o clock"/>
     </comp>
-    <comp lib="0" loc="(200,360)" name="Pin">
+    <comp lib="0" loc="(450,120)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(780,390)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(200,340)" name="Pin">
+    <comp lib="3" loc="(880,170)" name="Adder"/>
+    <comp lib="0" loc="(140,330)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(1010,180)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(1030,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(860,150)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
     </comp>
   </circuit>
 </project>
